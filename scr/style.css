@@ -1,0 +1,275 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration:none;
+}
+
+#caberçalho{
+  width: 100%;
+  height: auto;
+  border: none;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.logo{
+  width: 190px;
+  height: auto;
+}
+
+.buttons{
+  display: flex;
+  gap: 40px;
+}
+.buttons a{
+  color: #fff;
+}
+
+/* colocoar transição nos bottons*/
+
+section#header-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+h1.tema{
+ font-family: 'Courier New', Courier, monospace;
+}
+p.rodapé{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgba(85, 79, 79, 0.996);
+
+}
+
+
+main.caixa-principal{
+  display: flex;
+  width: 100%;
+  padding: 0px 100px;
+  gap: 60px;
+  margin-top: 10px;
+}
+
+section.conteudo-principal{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3 , 1fr);
+}
+
+section.conteudo-principal>div:hover{
+  transition: 1ms;
+  border: 2px black solid;
+  border-radius: 15px;
+}
+
+
+img.images-conteudo{
+  width: 270px;
+  height: 180px;
+  border-radius: 10px;
+}
+h1.tema-images{
+  font-size: 18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p.lorem{
+  max-width: 240px;
+  font-size: 15px;
+}
+
+aside.conteudo-2{
+  background-color: black;
+  color: #fff;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+img.images-aside{
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+h1.title-aside{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 19px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer.rodape-final{
+  width: 100%;
+  height: auto;
+  border: none;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  margin-top: 10px;
+}
+
+a.link-topo{
+  color: #fff;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 2560px ){
+  img.logo{
+    width: 350px;
+  }
+  nav.buttons{
+    font-size: 30px;
+  }
+  h1.tema{
+    font-size: 50px;
+  }
+  p.rodapé{
+    font-size: 30px;
+  }
+  section.conteudo-principal{
+    grid-template-columns: repeat(4 , 1fr);
+    gap:40px;
+  }
+  img.images-conteudo{
+    width: 450px;
+    height: 300px;
+  }
+
+  h1.tema-images{
+    font-size: 35px;
+  }
+  p.lorem{
+    max-width: 410px;
+    font-size: 25px;
+  }
+
+  img.images-aside{
+    width: 350px; 
+  }
+  
+  h1.title-aside{
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+
+  a.link-topo{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1330px ) {
+  main.caixa-principal{
+    justify-content: center;
+  }
+  section.conteudo-principal{
+    grid-template-columns: repeat(2 , 1fr);
+  }
+  img.images-conteudo{
+    width: 300px;
+    height: 210px;
+  }
+  h1.tema-images{
+    font-size: 23px;
+  }
+  p.lorem{
+    max-width: 300px;
+    font-size: 17px;
+  }
+  
+  img.images-aside{
+    width: 300px;
+  }
+  
+  h1.title-aside{
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  div.content-2{
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1100px ) {  
+  main.caixa-principal{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }    
+  section.conteudo-principal{
+    grid-template-columns: repeat(1 , 1fr);
+  }
+  img.images-conteudo{
+    width: 650px;
+    height: 400px;
+  }
+
+  h1.tema-images{
+    font-size: 30px;
+  }
+  p.lorem{
+    max-width: 650px;
+    font-size: 22px;
+  }
+  
+  aside.conteudo-2{
+    border-radius: 10px;
+
+  }
+  img.images-aside{
+    width: 650px;
+    margin-bottom: 20px;
+  }
+  
+  h1.title-aside{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 740px ) { 
+  p.rodapé{
+   max-width: 450px;
+   text-align: center;
+  }
+  img.images-conteudo{
+    width: 450px;
+    height: 300px;
+  }
+  p.lorem{
+    max-width: 450px;
+  }
+  img.images-aside{
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 548px ) {
+  img.logo{
+    width: 120px;
+  }
+  p.rodapé{
+   max-width: 400px;
+   text-align: center;
+   font-size: 14px;
+  }
+  img.images-conteudo{
+    width: 400px;
+    height: 300px;
+  }
+  img.images-aside{
+    width: 400px;
+  }
+  a.link-topo{
+    font-size: 15px;
+  }
+}
